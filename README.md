@@ -1,41 +1,41 @@
-Packing Slip Generator App
+**Packing Slip Generator App**
 
-A Node.js app to generate packing slips for orders, streamlining order fulfillment and documentation.
+  A Node.js app to generate packing slips for orders, streamlining order fulfillment and documentation.
 
 Features
 
-Generates printable packing slips
+  Generates printable packing slips
 
-Backend processing with Node.js and Express
+  Backend processing with Node.js and Express
 
 Tech Stack
 
-Frontend: HTML, CSS, JavaScript
+  Frontend: HTML, CSS, JavaScript
 
-Backend: Node.js, Express.js
+  Backend: Node.js, Express.js
 
 Setup
 
-Clone the repo:
+  Clone the repo:
 
-git clone https://github.com/mayur-18/Packing-Slip-Generator-App.git
+  git clone https://github.com/mayur-18/Packing-Slip-Generator-App.git
 
-cd Packing-Slip-Generator-App
+  cd Packing-Slip-Generator-App
 
 Install dependencies:
 
-npm install
+  npm install
 
 Set up environment:
 
-Create a .env file with necessary variables (e.g., PORT=3000).
+  Create a .env file with necessary variables (e.g., PORT=3000).
 
 Run the app:
 
-npm start
+  npm start
 
-App runs on http://localhost:3000.
+  App runs on http://localhost:3000.
 
 Usage
 
-Open http://localhost:3000 in your browser.
+  Open http://localhost:3000 in your browser.
