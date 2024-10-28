@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packing Slip Generator</title>
+</head>
+<body>
+    <h1>Packing Slip Generator</h1>
+    <button id="downloadBtn">Download Packing Slips</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', async () => {
+            try {
+                // Send a request to the server to generate packing slips
+                const response = await fetch('http://localhost:3000/orders', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Create a blob from the response
+                    const blob = await response.blob();
+                    // Create a link element
+                    const link = document.createElement('a');
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = 'packing-slips.zip'; // Name for the downloaded file
+                    link.click(); // Simulate a click on the link
+                    window.URL.revokeObjectURL(link.href); // Clean up
+                } else {
+                    console.error('Error fetching packing slips:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
