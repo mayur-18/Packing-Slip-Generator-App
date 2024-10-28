@@ -1,8 +1,11 @@
 Packing Slip Generator App
+
 A Node.js app to generate packing slips for orders, streamlining order fulfillment and documentation.
 
 Features
+
 Generates printable packing slips
+
 Backend processing with Node.js and Express
 
 Tech Stack
